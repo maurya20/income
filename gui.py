@@ -20,9 +20,12 @@ def submit():
     arr1 = np.append(arr1, num1)
     arr2 = np.append(arr2, num2)
     tk.Label(root, text="Record submitted sucessfully", bg="green", fg='white').grid(row=7, column=2)
+    root.after(1500, clear_label)
     print(arr1)
     print(arr2)
     return arr1, arr2
+def clear_label():
+    label = tk.Label(root, text='                                                                ').grid(row=7, column=2)
 labelDay = tk.Label(root, text="Days").grid(row=1, column=0)
 labelincome = tk.Label(root, text = 'Income').grid(row = 2, column= 0)
 
