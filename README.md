@@ -1,2 +1,2 @@
 # income
-It ia income predictor based on tkinter GUI
+It is a income predictor based on tkinter GUI
